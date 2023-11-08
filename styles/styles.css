@@ -1,0 +1,130 @@
+*{
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+body{ 
+  font-family: 'Mooli', sans-serif;
+  padding-top: 40px; 
+  font-size: 20px;
+  overflow-y: hidden;
+  background-image: url("https://img.freepik.com/free-psd/aerial-view-wooden-table-photography-hobby-concept_53876-12011.jpg?w=826&t=st=1699385858~exp=1699386458~hmac=68e0710cfd18677fa41602ed41cb9c75a257d944385130c03208c89e592462ef");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  min-height: 700px;
+  max-width: 700px;
+  margin: 0 auto;
+  border: 4px solid rgb(218, 197, 160);
+  border-radius: 70px 10px 10px 10px;
+  background-color:  rgb(218, 197, 160);
+  gap: 10px;
+}
+
+.task-entry{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 40px;
+  height: 100%;
+  width: 50;
+  padding: 6px 8px ;
+  border-radius: 5px;
+}
+
+.task-buttons{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 5px;
+}
+
+.task-entry > input{
+  padding: 3px;
+  background-color: rgba(0, 139, 139, 0.068);
+  border-radius: 5px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.add-task{
+  font-size: 30px;
+  padding: 0px 6px;
+  border-radius: 50%;
+  background-color: rgb(84, 190, 146)
+}
+
+.clear{
+  font-size: 20px;
+  padding: 8px;
+  border-radius: 12px;
+  background-color: rgb(141, 113, 113);
+}
+
+.task-adjustment{
+  background-color: wheat;
+  height: 80%;
+  width: 90%;
+  min-height: 600px;
+  padding: 30px 10px 30px 5px;
+  border-radius: 10px;
+  border: 2.2px solid slategrey;
+}
+
+.task-adjustment li, .done, .delete{
+  display: inline-block;
+} 
+
+.task-adjustment li{
+  width: 100%;
+  font-size: 18px;
+  padding: 20px 2px 5px 2px;
+  border-bottom: 2px dashed rgb(144, 134, 112);
+}
+
+li:hover, .delete:hover{
+  cursor: pointer;
+} 
+
+li:hover{
+  background-color: rgba(199, 137, 56, 0.185);
+  border-radius: 10px;
+}
+
+.delete:hover{
+  background-color: rgba(194, 51, 51, 0.726);
+}
+
+.done, .delete{
+  font-size: 12px;
+  border-radius: 5px;
+}
+
+.done{
+  padding: 2px;
+}
+
+.delete{
+  height: 20px;
+  width: 30px;
+  font-size: 15px;
+  float: inline-end;
+  background-color: rgba(128, 128, 128, 0.459);
+}
+
+.green {
+  background-color: rgba(18, 148, 18, 0.452);
+  border-radius: 5px;
+  padding: 0 !important;
+}
