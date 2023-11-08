@@ -7,9 +7,8 @@
 
 body{ 
   font-family: 'Mooli', sans-serif;
-  padding-top: 40px; 
+  padding: 30px 0 50px 0; 
   font-size: 20px;
-  overflow-y: hidden;
   background-image: url("https://img.freepik.com/free-psd/aerial-view-wooden-table-photography-hobby-concept_53876-12011.jpg?w=826&t=st=1699385858~exp=1699386458~hmac=68e0710cfd18677fa41602ed41cb9c75a257d944385130c03208c89e592462ef");
   background-position: center;
   background-size: cover;
@@ -23,13 +22,15 @@ body{
   align-items: center;
   height: 100%;
   width: 100%;
-  min-height: 700px;
-  max-width: 700px;
+  min-height: 550px;
+  max-width: 600px;
   margin: 0 auto;
-  border: 4px solid rgb(218, 197, 160);
+  border: 4px solid rgb(122, 68, 31);
   border-radius: 70px 10px 10px 10px;
-  background-color:  rgb(218, 197, 160);
+  background-color:  rgb(122, 68, 31);
   gap: 10px;
+  box-shadow: 5px 5px rgba(0, 0, 0, 0.493);
+  padding-bottom: 50px;
 }
 
 .task-entry{
@@ -52,7 +53,7 @@ body{
 
 .task-entry > input{
   padding: 3px;
-  background-color: rgba(0, 139, 139, 0.068);
+  background-color: #e7cccc;
   border-radius: 5px;
   font-size: 20px;
   font-weight: bold;
@@ -62,27 +63,27 @@ body{
   font-size: 30px;
   padding: 0px 6px;
   border-radius: 50%;
-  background-color: rgb(84, 190, 146)
+  background-color: rgb(205 205 205);
 }
 
 .clear{
   font-size: 20px;
   padding: 8px;
   border-radius: 12px;
-  background-color: rgb(141, 113, 113);
+  background-color: rgb(169 122 122);
 }
 
 .task-adjustment{
-  background-color: wheat;
+  background-color: #e1d65e;
   height: 80%;
   width: 90%;
   min-height: 600px;
   padding: 30px 10px 30px 5px;
-  border-radius: 10px;
+  border-radius: 5px;
   border: 2.2px solid slategrey;
 }
 
-.task-adjustment li, .done, .delete{
+.task-adjustment li,.delete{
   display: inline-block;
 } 
 
@@ -90,7 +91,7 @@ body{
   width: 100%;
   font-size: 18px;
   padding: 20px 2px 5px 2px;
-  border-bottom: 2px dashed rgb(144, 134, 112);
+  border-bottom: 1px dashed rgb(144, 134, 112);
 }
 
 li:hover, .delete:hover{
@@ -98,21 +99,16 @@ li:hover, .delete:hover{
 } 
 
 li:hover{
-  background-color: rgba(199, 137, 56, 0.185);
-  border-radius: 10px;
+  background-color: rgba(199, 137, 56, 0.144);
 }
 
 .delete:hover{
-  background-color: rgba(194, 51, 51, 0.726);
+  background-color: rgba(255, 0, 0, 0.534);
 }
 
-.done, .delete{
+li, .delete{
   font-size: 12px;
   border-radius: 5px;
-}
-
-.done{
-  padding: 2px;
 }
 
 .delete{
@@ -126,5 +122,4 @@ li:hover{
 .green {
   background-color: rgba(18, 148, 18, 0.452);
   border-radius: 5px;
-  padding: 0 !important;
-}
+  padding: 0 !important;}
