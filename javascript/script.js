@@ -42,16 +42,18 @@ function add_task_to_list () {
       new_li.classList.toggle("green")
     })
     
-    // Event: delete list item on click button 
+    // Event: delete list item on delete button 
     delete_btn.addEventListener("click", function() {
       delete_btn.parentElement.style.display="none"
     })
 
-    
-    //edit task names
-
-
+    // Event: edit text on edit button
+    edit_btn.addEventListener("click", function (){
+      edit_btn.parentElement.removeChild(delete_btn)
+      edit_btn.innerHTML = ""      
+      task_name.value = edit_btn.parentElement.textContent
+      edit_btn.parentElement.style.display = "none"
+    } )
     task_name.value = ""
   }
 }
-
