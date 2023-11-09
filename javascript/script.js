@@ -54,7 +54,7 @@ function add_task_to_list () {
       edit_btn.parentElement.removeChild(delete_btn)
       edit_btn.innerHTML = ""      
       task_name.value = edit_btn.parentElement.textContent
-      edit_btn.parentElement.style.display = "none"
+      edit_btn.parentElement.remove()
     } )
 
     // Event: filter according to select
