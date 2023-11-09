@@ -19,9 +19,14 @@
             <button class="add-task">+</button>
             <button class="clear">clear</button>    
           </div>
+          <select name="filter" id="filter">
+            <option id="all_tasks">all tasks</option>
+            <option id="active">active</option>
+            <option id="completed">completed</option>
+          </select>
         </div>
     
-        <div class="task-adjustment">
+        <div class="list-of-tasks">
           <ul></ul>
         </div>
     
@@ -31,3 +36,12 @@
   <script src="./javascript/script.js"></script>
 </body>
 </html>
+
+
+
+<!-- BONUS : 
+  1) Implement a filter or search bar that allows users to filter tasks by their status (e.g., all tasks, completed tasks, or active tasks).
+  
+  2) Implement drag-and-drop functionality for reordering tasks.
+  3) Add due dates and priorities to tasks.
+  4) Enable sorting and filtering by due dates and priorities. -->
