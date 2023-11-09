@@ -39,14 +39,9 @@ function add_task_to_list () {
     edit_btn.setAttribute("class", "edit")
     new_li.appendChild(edit_btn)
 
-    // counter ++
-    // new_li.setAttribute("id", `${counter}`)
-    // task_storage. new_li
-
     // Event: toggle green on li item 
     new_li.addEventListener("click", function () {
       new_li.classList.toggle("green")
-      // console.log(u_list)
     })
     
     // Event: delete list item on delete button 
@@ -66,10 +61,6 @@ function add_task_to_list () {
     let filter_input = document.getElementById("filter")
     filter_input.addEventListener("click", function (e) {
       filter_value = e.target.value // all task, completed, active
-
-      // console.log(previous_list_of_li)
-      // console.log(previous_list_of_li.children)
-
       
       for (i=0 ; i<u_list.children.length; i++){
         
@@ -95,9 +86,6 @@ function add_task_to_list () {
         }
         
       }
-
-      // console.log(u_list.children)
-      // console.log(filter_value)
     })
     task_name.value = ""
   }
