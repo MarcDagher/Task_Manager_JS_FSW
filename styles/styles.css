@@ -111,7 +111,7 @@ select option:first-child{
   width: 90%;
   height: 600px;
   overflow-y: auto;
-  padding: 30px 10px 30px 5px;
+  padding: 15px 10px 30px 5px;
   border-radius: 5px;
   border: 2.2px solid slategrey;
 }
@@ -124,8 +124,8 @@ select option:first-child{
   list-style: none;
   width: 100%;
   font-size: 16px;
-  padding: 20px 2px 5px 0;
-  border-bottom: 1px dashed rgb(144, 134, 112);
+  padding: 15px 2px 5px 0;
+  border-bottom: 2px dashed rgb(144, 134, 112);
 }
 
 .delete, .edit{
@@ -153,6 +153,14 @@ li, .delete{
   border-radius: 5px;
 }
 
+.priority-button{
+  height: 20px;
+  width: 30px;
+  background-color: rgb(172, 1, 1);
+  padding: 0 3px 18px 3px;
+  border-radius: 3px;
+}
+
 /* :hover properties */
 
 li, button, input{
@@ -178,7 +186,13 @@ input:hover{
 .green {
   background-color: rgba(18, 148, 18, 0.452);
   border-radius: 5px;
-  padding: 0 !important;}
+  padding: 0 !important;
+}
+
+.priority{
+  background-color: rgb(134, 30, 30);
+  padding-top: 25px;
+}
 
 .dragging{
   background-color: rgba(241, 0, 0, 0.418);

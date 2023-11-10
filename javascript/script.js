@@ -84,8 +84,7 @@ function add_task_to_list () {
         }
         
       }
-    })
-
+    }) 
     task_name.value = ""
   }
 }
