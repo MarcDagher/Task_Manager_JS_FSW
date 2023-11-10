@@ -2,15 +2,12 @@
 let task_name = document.getElementById("task-name")
 let add_task_btn = document.getElementsByClassName("add-task")[0]
 let clear_btn = document.getElementsByClassName("clear")[0]
-let u_list = document.getElementsByTagName("ul")[0]
-// let task_storage = {}
+let list_container = document.getElementsByTagName("ul")[0]
 
 // Event: clear written input text
 clear_btn.addEventListener("click", function () {
   task_name.value = ""
 })
-
-// let counter = 0
 
 // ON-CLICK function to add INPUT to the list 
 add_task_btn.addEventListener("click", add_task_to_list)
@@ -24,8 +21,9 @@ function add_task_to_list () {
 
     // create and display list item
     let new_li = document.createElement("li")
+    new_li.setAttribute("draggable", "true") // for drag and drop
     new_li.innerHTML = task_name.value
-    u_list.appendChild(new_li) 
+    list_container.appendChild(new_li) 
 
     // create and display delete button
     let delete_btn = document.createElement("button")
@@ -62,9 +60,9 @@ function add_task_to_list () {
     filter_input.addEventListener("click", function (e) {
       filter_value = e.target.value // all task, completed, active
       
-      for (i=0 ; i<u_list.children.length; i++){
+      for (i=0 ; i<list_container.children.length; i++){
         
-        let previous_list_of_li = u_list.children[i].parentElement 
+        let previous_list_of_li = list_container.children[i].parentElement 
         console.log(previous_list_of_li.children[i])
         if (filter_value == "active") { // hide class="green"
           if (previous_list_of_li.children[i].classList == 'green'){
@@ -87,6 +85,7 @@ function add_task_to_list () {
         
       }
     })
+
     task_name.value = ""
   }
 }
